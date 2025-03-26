@@ -10,8 +10,8 @@
     <!-- PreviewView para mostrar la cámara -->
     <androidx.camera.view.PreviewView
         android:id="@+id/previewView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
         app:layout_constraintDimensionRatio="4:3"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:padding="16dp"
-        android:text="No se ha detectado un rostro"
+        android:text="@string/identificando"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"

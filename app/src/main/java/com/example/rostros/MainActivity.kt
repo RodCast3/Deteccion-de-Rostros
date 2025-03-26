@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
         faceDetector = FaceDetection.getClient(options)
 
-        // Solicitar permisos de la cámara
+        // Solicitar permisos de la cámara a la app
         if (allPermissionsGranted()) {
             Toast.makeText(this, "PERMISOS DE CAMARA CONCEDIDOS", Toast.LENGTH_LONG).show()
             startCamera()
@@ -114,6 +114,7 @@ class MainActivity : AppCompatActivity() {
         ContextCompat.checkSelfPermission(baseContext, it) == PackageManager.PERMISSION_GRANTED
     }
 
+    //Verificar que se tengan los permisos de camara
     private val requestPermissions = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
     ) { permissions ->
