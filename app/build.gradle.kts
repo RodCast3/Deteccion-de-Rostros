@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation ("com.squareup.okhttp3:okhttp:4.12.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -45,12 +46,14 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+
     //Agregando las dependencias de MLkit, asi como la version de la camara
     implementation ("com.google.mlkit:face-detection:16.1.5")
     implementation ("com.google.android.gms:play-services-mlkit-face-detection:16.1.5")
     implementation ("androidx.camera:camera-core:1.3.0")
 
     val version = "1.4.1"
+    //Camara
     implementation("androidx.camera:camera-core:${version}")
     implementation("androidx.camera:camera-camera2:${version}")
     implementation("androidx.camera:camera-lifecycle:${version}")

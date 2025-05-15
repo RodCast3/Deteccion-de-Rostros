@@ -20,20 +20,6 @@
         app:layout_constraintWidth_default="percent"
         app:layout_constraintWidth_percent="0.9" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:padding="16dp"
-        android:text="@string/identificando"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
 
     <Button
         android:id="@+id/cancel_button"
@@ -43,6 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:text="Regresar"
         app:layout_constraintVertical_bias="0.92" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
