@@ -249,6 +249,7 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
+
     private val solicitudPermisos = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
     ) { permissions ->
