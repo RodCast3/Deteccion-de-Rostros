@@ -44,7 +44,6 @@ import okhttp3.Response
 import org.json.JSONObject
 
 
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var previewView: PreviewView
